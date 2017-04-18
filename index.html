@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- HTML Basics Exercises 2-5 Martha Dunne -->
+<html>
+<head>
+	<title>Swift Programming Language</title>
+</head>
+<body>
+	<h1 id="top">Swift Programming Language</h1>
+	<p>
+		<a href="#bottom">Bottom</a></p>
+		<a href="#whowhat">When? Where? Who?</a><br>
+		<a href="#purpose">What Purpose Does Language Serve?</a><br>
+		<a href="#example">Code Example</a><br>
+		<a href="#details">Details</a><br>
+	<!- https://en.wikipedia.org/wiki/Swift_(programming_language)-->
+	<h2 id="whowhat">When? Where? Who?</h2>
+	<p>
+		<ul>
+		<li>When - Open source Dec 2015.  Stable release March 2017</li>
+		<li>Where - Apple</li>
+		<li>Who - Chris Lattner, founder and project lead,
+		started coding on his own July 2010.</li>
+		</ul>
+	</p>
+	<p style="text-align:center;">
+		<img src="img/ChrisPhoto.jpg" alt="Chris Lattner photo" width="120" height="120">
+	</p>
+	<h2 id="purpose">What Purpose Does Language Serve?</h2>
+	<p>
+		<ul>
+			<li>Introduced as "Objective-C without the C".</li>
+			<li>For mobile application development, on iOS & linux.</li>
+			<li>Cleaner (reduce useless syntax), safer (null/nil handling).</li>
+			<li>Swift Playgrounds make programming interactive, approachable and fun.</li>
+			<li>Swift Playgrounds were first introduced as a way to experiment with your code in Xcode.</li>
+		</ul>
+	</p>
+	<!- https://developer.apple.com/swift/resources/ -->
+	<h2 id="example">Code Example</h2>
+	<p>
+		<pre>
+		import Cocoa
+		var str = "Chapter 4 Playground"
+		func fahrenheitToCelsius(fahrenheitValue : Double) -> Double {
+			var result : Double
+			result = (((fahrenheitValue - 32) * 5) / 9)
+			return result
+		}
+
+		var outdoorTemperatureInFahrenheit = 88.2
+		var outdoorTemperatureInCelsius = fahrenheitToCelsius(outdoorTemperatureInFahrenheit)
+		</pre>
+	</p>
+	<h2 id="details">Details</h2>
+	<p>
+		<ul>
+			<li>Compiled Language - compiled to machine code that runs on the Objective-C runtime.</li>
+			<li>Strongly Typed - checks variable/argument types at compile time.</li>
+			<li>Imperative - object oriented imperative language with some tools for programming functionally.</li>
+		</ul>
+	</p>
+	<!- https://www.reddit.com/r/swift/comments/2ffk7z/what_is_swift_imperative_functional/
+	Looking at Swift it has:
+mutable state, and language constructs for operating on it (loops, for example)
+affordances for Object Oriented programming (built-in dynamic dispatch, inheritance, object types)
+affordances for Functional programming (immutable types, closures, stdlib has useful higher order functions like map, reduce, etc...)
+it does not have, however:
+Recursively constructed types (lists, trees) in the stdlib, instead it has arrays and dictionaries
+Tail-call optimization
+So I think it'd be most accurate to describe Swift as an object oriented imperative language with some tools for programming functionally. It would be difficult to use it as a pure functional language at this point, due to the lack of tail-call optimization, and lack of stdlib and compiler support for recursive structures.
+	-->
+	<p><a href="#top">Top</a></p>
+	<p id="bottom"></p>
+</body>
+</html>

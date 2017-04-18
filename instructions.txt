@@ -1,0 +1,17 @@
+One-page website built using HTML and CSS.
+
+This will use the HTML/CSS Rubric on the student portal for grading.
+
+Importantly, make sure that your code is clean, consistent, and uses the correct
+HTML elements for the job.
+
+You will be giving a short (probably 2-5 minute) presentation on your language
+tomorrow morning.
+
+Answer:
+
+1. Name of language, When? Where? By Who?
+2. What purpose does the language serve?
+3. Give an example of code written in the language.
+4. Interpreted or Compiled? Strongly or Weakly Typed?
+	Imperative, Functional, Logical
